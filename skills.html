@@ -9,6 +9,9 @@
     <!-- Favicon / Site Icon / Bookmark Icon -->
     <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
 
+    <!-- apple-touch-icon -->
+    <link rel="apple-touch-icon" href="assets/images/logo.svg">
+
     <!-- Site Title -->
     <title>Academic Portfolio</title>
 
@@ -21,7 +24,8 @@
     <!-- header -->
     <div class="header-container displayFlex justify-content-between flexCenter-x position-absolute width100p">
 
-        <header id="header" class="displayFlex padding20 justify-content-between flexCenter-y position-absolute width100p">
+        <header id="header"
+            class="displayFlex padding20 justify-content-between flexCenter-y position-absolute width100p">
 
             <!-- logo -->
             <div>
@@ -36,7 +40,7 @@
             <button id="hamburger-icon" class="hamburger-icon bg-green border-none"></button>
 
             <!-- navigation -->
-            <nav id="navigation" class="navigation displayFlex gap30 padding20">
+            <nav id="navigation" class="navigation displayFlex gap30">
                 <a href="index.html" class="nav-link text-white">About Me</a>
                 <a href="Academics.html" class="nav-link text-white">Academics</a>
                 <a href="projects.html" class="nav-link text-white">Projects</a>
@@ -51,7 +55,7 @@
     <main>
 
         <!-- Section -->
-        <section class="displayFlex flexColumn flexCenter gap20">
+        <section id="skills-page" class="displayFlex flexColumn flexCenter gap20">
 
             <!-- for backgroud image -->
             <div class="upperDivison width100p"></div>
@@ -65,24 +69,115 @@
 
                 <!-- expandables -->
 
-                <div class="expandables-container">
-                    <div class="expandable active">
-                        <div onclick="expand('expand-head')"
+                <div class="expandables-container displayFlex flexColumn gap10">
+                    <div id="expandable-1" class="expandable active">
+                        <div id="expand-head-1" onclick="expand('expandable-1','expand-body-1')"
                             class="expandable-head pointer-cursor displayFlex justify-content-between">
                             <span>Skills</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                     <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                                     <path
                                         d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-                                </svg></i></div>
-                        <div class="expandable-body" id="expand-head">
-                            <ul>
-                                <li>IT management</li>
-                                <li>Data migration</li>
-                                <li>Project management</li>
-                                <li>Computer skills</li>
-                                <li>Backup and recovery</li>
-                                <li>Office Automation</li>
+                                </svg></i>
+                        </div>
+                        <div class="expandable-body active" id="expand-body-1">
+                            <ul class="padding20 displayFlex flexColumn gap10">
+                                <li> IT management
+                                    <span class="stars">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                    </span>
+                                </li>
+                                <li>
+                                    Data migration
+                                    <span class="stars">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                    </span>
+                                </li>
+                                <li>
+                                    Project management
+                                    <span class="stars">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon_star_grey.svg" alt="star">
+                                    </span>
+                                </li>
+                                <li>
+                                    Computer skills
+                                    <span class="stars">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon_star_grey.svg" alt="star">
+                                    </span>
+                                </li>
+                                <li>
+                                    Backup and recovery
+                                    <span class="stars">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon_star_grey.svg" alt="star">
+                                        <img src="assets/images/icons/icon_star_grey.svg" alt="star">
+                                    </span>
+                                </li>
+                                <li>
+                                    Office Automation
+                                    <span class="stars">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon _star_green.svg" alt="star">
+                                        <img src="assets/images/icons/icon_star_grey.svg" alt="star">
+                                        <img src="assets/images/icons/icon_star_grey.svg" alt="star">
+                                    </span>
+                                </li>
                             </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experiencies -->
+                    <div id="expandable-2" class="expandable">
+                        <div id="expand-head-2" onclick="expand('expandable-2','expand-body-2')"
+                            class="expandable-head pointer-cursor displayFlex justify-content-between">
+                            <span>Experience</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                </svg></i>
+                        </div>
+                        <div class="expandable-body padding20" id="expand-body-2">
+                            <span class="text-bold">Wordpress Developer: Tech Solution Expert</span>
+                            <ol class="padding20 displayFlex flexColumn gap10">
+                                <li>&nbsp; Meeting with clients to discuss website design and function.</li>
+                                <li>&nbsp; Designing and building the website front-end.</li>
+                                <li>&nbsp; Creating the website architecture.</li>
+                                <li>&nbsp; Customization of Word Press themes and plugins.</li>
+                                <li>&nbsp; Conducting website performance tests.</li>
+                                <li>&nbsp; Troubleshooting content issues.</li>
+                                <li>&nbsp; Conducting Word Press training with the client.</li>
+                                <li>&nbsp; Monitoring the performance of the live website</li>
+                            </ol>
+                            <span class="text-bold">Data Entry Operator: Jinnah Islamia Model College</span>
+                            <ol class="padding20 displayFlex flexColumn gap10">
+                                <li>&nbsp; Entering customer and account data from source documents within time limits.
+                                </li>
+                                <li>&nbsp; Compiling, verifying accuracy and sorting information to prepare source data
+                                    for computer entry.</li>
+                                <li>&nbsp; Reviewing data for deficiencies or errors, correcting any incompatibilities
+                                    and checking output.</li>
+                                <li>&nbsp; Research and obtain further information for incomplete documents.</li>
+                                <li>&nbsp; Apply data program techniques and procedures.</li>
+                                <li>&nbsp; Scan documents and print files, when needed.</li>
+                            </ol>
                         </div>
                     </div>
                 </div>

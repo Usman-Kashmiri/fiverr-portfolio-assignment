@@ -9,6 +9,9 @@
     <!-- Favicon / Site Icon / Bookmark Icon -->
     <link rel="shortcut icon" href="assets/images/logo.svg" type="image/x-icon">
 
+    <!-- apple-touch-icon -->
+    <link rel="apple-touch-icon" href="assets/images/logo.svg">
+
     <!-- Site Title -->
     <title>Academic Portfolio</title>
 
@@ -18,34 +21,35 @@
 
 <body>
 
-  <!-- header -->
-  <div class="header-container displayFlex justify-content-between flexCenter-x position-absolute width100p">
+    <!-- header -->
+    <div class="header-container displayFlex justify-content-between flexCenter-x position-absolute width100p">
 
-    <header id="header" class="displayFlex padding20 justify-content-between flexCenter-y position-absolute width100p">
+        <header id="header"
+            class="displayFlex padding20 justify-content-between flexCenter-y position-absolute width100p">
 
-        <!-- logo -->
-        <div>
+            <!-- logo -->
+            <div>
 
-            <!-- logo svg -->
-            <a href="index.html" class="logo nav-link text-white">
-                <img src="assets/images/logo.svg" alt="MM - logo">
-            </a>
-        </div>
+                <!-- logo svg -->
+                <a href="index.html" class="logo nav-link text-white">
+                    <img src="assets/images/logo.svg" alt="MM - logo">
+                </a>
+            </div>
 
-        <!-- Menu Btn -->
-        <button id="hamburger-icon" class="hamburger-icon bg-green border-none"></button>
+            <!-- Menu Btn -->
+            <button id="hamburger-icon" class="hamburger-icon bg-green border-none"></button>
 
-        <!-- navigation -->
-        <nav id="navigation" class="navigation displayFlex gap30 padding20">
-            <a href="index.html" class="nav-link text-white">About Me</a>
-            <a href="Academics.html" class="nav-link text-white">Academics</a>
-            <a href="projects.html" class="active nav-link text-white">Projects</a>
-            <a href="testimonials.html" class="nav-link text-white">Testimonials</a>
-            <a href="skills.html" class="nav-link text-white">Skills</a>
-            <a href="contact.html" class="nav-link text-white">Contact</a>
-        </nav>
-    </header>
-</div>
+            <!-- navigation -->
+            <nav id="navigation" class="navigation displayFlex gap30">
+                <a href="index.html" class="nav-link text-white">About Me</a>
+                <a href="Academics.html" class="nav-link text-white">Academics</a>
+                <a href="projects.html" class="active nav-link text-white">Projects</a>
+                <a href="testimonials.html" class="nav-link text-white">Testimonials</a>
+                <a href="skills.html" class="nav-link text-white">Skills</a>
+                <a href="contact.html" class="nav-link text-white">Contact</a>
+            </nav>
+        </header>
+    </div>
 
     <!-- Main -->
     <main>
@@ -58,7 +62,7 @@
 
             <!-- the container -->
             <section
-                class="container projects-container displayFlex flexColumn flexCenter-x position-absolute gap30 padding30">
+                class="container projects-container displayFlex flexColumn flexCenter-y position-absolute gap30 padding30">
 
                 <!-- Heading -->
                 <h1 class="text-green text-align-center text-transform-capitalize">My Projects</h1>
@@ -68,8 +72,14 @@
                     <!-- Currency Converter -->
                     <a target="_blank" href="https://incredible-gecko-3dd88f.netlify.app/">
                         <div class="project displayFlex flexCenter">
-                            <img src="assets/images/currency converter.png" alt="currency converter app">
-                            <span class="text-white position-absolute text-transform-capitalize text-align-center">currency
+                            <picture>
+                                <source media="(min-width: 1080px)" srcset="assets/images/currency-converter.webp">
+                                <source media="(min-width: 600px)" srcset="assets/images/currency-converter.png">
+                                <img src="assets/images/currency-converter.png" alt="currency converter app"
+                                    loading="lazy">
+                            </picture>
+                            <span
+                                class="text-white position-absolute text-transform-capitalize text-align-center">currency
                                 converter app</span>
                         </div>
                     </a>
@@ -77,8 +87,14 @@
                     <!-- Fuel Cost Forcaster Project -->
                     <a target="_blank" href="https://transcendent-smakager-89f147.netlify.app/">
                         <div class="project displayFlex flexCenter">
-                            <img src="assets/images/fuel cost forcaster.png" alt="fuel cost forcaster app">
-                            <span class="text-white position-absolute text-transform-capitalize text-align-center">fuel cost
+                            <picture>
+                                <source media="(min-width: 1080px)" srcset="assets/images/fuel-cost-forcaster.webp">
+                                <source media="(min-width: 600px)" srcset="assets/images/fuel-cost-forcaster.png">
+                                <img src="assets/images/fuel-cost-forcaster.png" alt="fuel cost forcaster app"
+                                    loading="lazy">
+                            </picture>
+                            <span class="text-white position-absolute text-transform-capitalize text-align-center">fuel
+                                cost
                                 forcaster
                                 app</span>
                         </div>
