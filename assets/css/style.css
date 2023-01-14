@@ -14,6 +14,7 @@
 /* Declared global CSS Variables */
 :root {
   --seaGreen: #05d270;
+  --lighyGrey: #b4b4b4;
   --seaGreenLight: rgb(5, 210, 112, 30%);
   --width100: 100vw;
   --height100: 100vh;
@@ -29,9 +30,8 @@ p {
   font-weight: unset;
 }
 
-/* setting gradient background color for main */
 main {
-  background: linear-gradient(to right, var(--cyan), var(--cyanDark));
+  height: auto;
 }
 
 /* setting main-height & min-width for section */
@@ -133,11 +133,11 @@ main section {
 }
 
 .container {
+  margin-top: 50px;
   min-width: 65vw;
   max-width: 75vw;
   min-height: 45vh;
   background-color: white;
-  /* padding: 20px 20px 10px 20px; */
   box-shadow: 0 8px 18px 12px #00000052;
 }
 
@@ -213,7 +213,14 @@ main section {
 
 /* navbar css */
 
+.header-container {
+  max-width: var(--width100);
+  height: 100%;
+  overflow-x: hidden;
+}
+
 header {
+  max-width: var(--width100);
   z-index: 10;
   background-color: transparent;
   transition: 0.5 ease-in-out;
@@ -227,6 +234,26 @@ header.fixed-navbar {
   position: fixed !important;
   background-color: rgba(17, 17, 17, 0.5);
 }
+
+/* Hamburger Icon */
+
+.hamburger-icon {
+  display: none;
+  padding: 3px 7px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.hamburger-icon svg {
+  width: 25px;
+  fill: white;
+}
+
+
+/* Navigation */
 
 .nav-link {
   padding: 9px 4px;
@@ -245,7 +272,7 @@ nav .nav-link:hover {
 
 .upperDivison {
   max-width: var(--width100);
-  height: 60vh;
+  min-height: 60vh;
   background-image: url(../images/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -253,7 +280,7 @@ nav .nav-link:hover {
 
 .lowerDivison {
   max-width: var(--width100);
-  height: 40vh;
+  min-height: 40vh;
 }
 
 /* about page css */
@@ -338,7 +365,10 @@ nav .nav-link:hover {
 /* Academics Page Css */
 
 .academics-container h1,
-.projects-container h1 {
+.projects-container h1,
+.testimonials-container h1,
+.skills-container h1,
+.contact-container h1 {
   font-size: 2.4rem;
 }
 
@@ -451,9 +481,105 @@ nav .nav-link:hover {
   -o-transform: translateY(0);
 }
 
+/* Testimonial page css */
+
+.testimonials {
+  grid-template-columns: 48% 48%;
+}
+
+.testimonials .testimony {
+  grid-template-columns: 40% 60%;
+}
+
+.testimonials .testimony .person-img {
+  overflow: hidden;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.testimony .person-img img {
+  object-fit: fill;
+}
+
+#person-1 {
+  border-right: solid 2px var(--lighyGrey);
+  border-bottom: solid 2px var(--lighyGrey);
+}
+
+#person-2 {
+  border-bottom: solid 2px var(--lighyGrey);
+}
+
+#person-3 {
+  border-right: solid 2px var(--lighyGrey);
+}
+
+.testimony .person .name {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.testimony .person .designation {
+  color: var(--lighyGrey);
+  font-size: .8rem;
+  font-weight: unset;
+}
+
+.testimony .statement {
+  margin-top: 25px;
+  font-size: 1.3rem;
+}
+
+/* Skills page css */
+
+.skills-container .expandable-head span {
+  font-size: 1.5rem;
+}
+
+.skills-container .expandable-head svg {
+  width: 20px;
+}
+
+.skills-container .expandable-body ul li {
+  list-style: inside;
+}
+
+.expandable-body {
+  display: none;
+}
+
+.expandable-body.active {
+  display: block;
+}
+
+/* Contact page css */
+
+.contact-info span {
+  font-size: 1.25rem;
+}
+
+.contact-info span a:hover {
+  text-decoration: underline;
+}
+
+.contact-info i svg {
+  width: 22px;
+  fill: var(--seaGreen);
+}
+
+.contact {
+  grid-template-columns: 30% 60%;
+}
+
 /* footer css */
 
 .footer {
+  margin-top: 50px;
   grid-template-columns: auto auto;
 }
 
@@ -467,10 +593,43 @@ footer {
 
 /* Media Queries for small screen devices */
 
+/* This css will be implemented on screen with screen resolution less than 1080px */
+@media screen and (max-width: 1080px) {
+
+  .hamburger-icon {
+    z-index: 10;
+    display: block;
+  }
+
+  .navigation {
+    padding: 50px 80px !important;
+    background-color: var(--seaGreen);
+    height: 100vh;
+    top: 0;
+    z-index: 5;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: .8s ease-out;
+    -webkit-transition: .8s ease-out;
+    -moz-transition: .8s ease-out;
+    -ms-transition: .8s ease-out;
+    -o-transition: .8s ease-out;
+  }
+
+  nav .nav-link.active {
+    border-bottom: 3px solid white;
+  }
+
+  nav .nav-link:hover {
+    border-bottom: 3px solid white;
+  }
+}
+
 /* This css will be implemented on screen with screen resolution less than 600px */
 @media screen and (max-width: 600px) {
-  /* padding 20px on small devices */
-  .padding20-sm {
-    padding: 20px !important;
+  .navigation {
+    align-items: center;
+    width: 100%;
   }
 }

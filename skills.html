@@ -38,10 +38,10 @@
             <!-- navigation -->
             <nav id="navigation" class="navigation displayFlex gap30 padding20">
                 <a href="index.html" class="nav-link text-white">About Me</a>
-                <a href="Academics.html" class="active nav-link text-white">Academics</a>
+                <a href="Academics.html" class="nav-link text-white">Academics</a>
                 <a href="projects.html" class="nav-link text-white">Projects</a>
                 <a href="testimonials.html" class="nav-link text-white">Testimonials</a>
-                <a href="skills.html" class="nav-link text-white">Skills</a>
+                <a href="skills.html" class="active nav-link text-white">Skills</a>
                 <a href="contact.html" class="nav-link text-white">Contact</a>
             </nav>
         </header>
@@ -57,35 +57,36 @@
             <div class="upperDivison width100p"></div>
 
             <!-- the container -->
-            <section class="container academics-container displayFlex flexColumn flexCenter-x position-absolute gap30 padding30">
+            <section
+                class="container skills-container displayFlex flexColumn flexCenter-x position-absolute gap30 padding30">
 
                 <!-- Heading -->
-                <h1 class="text-green text-align-center text-transform-capitalize">My academic history</h1>
+                <h1 class="text-green text-align-center text-transform-capitalize">My Skills & Experience </h1>
 
-                <!-- Table for academic history -->
+                <!-- expandables -->
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Institution</th>
-                            <th>Courses</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Sceondary School Certificate. <span>2012</span></td>
-                            <td>Superior Science Collage, BISE Mirpur. <span>Mark 790 out of 1050</span></td>
-                        </tr>
-                        <tr>
-                            <td>Intermediate of Pre-Engineering. <span>2012 - 2014</span></td>
-                            <td>Superior Science Collage, BISE Mirpur. <span>Mark 620 out of 1100</span></td>
-                        </tr>
-                        <tr>
-                            <td>Bachelor of Science: Information Technology. <span>2019</span></td>
-                            <td>Mirpur University of Science and Technology. <span>CGPA 3.2 out of 4.0</span> </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="expandables-container">
+                    <div class="expandable active">
+                        <div onclick="expand('expand-head')"
+                            class="expandable-head pointer-cursor displayFlex justify-content-between">
+                            <span>Skills</span> <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+                                </svg></i></div>
+                        <div class="expandable-body" id="expand-head">
+                            <ul>
+                                <li>IT management</li>
+                                <li>Data migration</li>
+                                <li>Project management</li>
+                                <li>Computer skills</li>
+                                <li>Backup and recovery</li>
+                                <li>Office Automation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
 
             </section>
 
