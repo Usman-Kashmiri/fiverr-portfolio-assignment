@@ -1,5 +1,4 @@
-var splashScreen = document.getElementById('splash-screen'),
-  header = document.getElementById('header'),
+var header = document.getElementById('header'),
   menuBtn = document.getElementById("hamburger-icon"),
   sideNav = document.getElementById("navigation"),
 
@@ -10,13 +9,6 @@ var splashScreen = document.getElementById('splash-screen'),
 // Defaults:
 sideNav.style.right = "-400px";
 menuBtn.innerHTML = hamburgerIcon;
-
-// preloader / splash screen
-window.onload = () => {
-  setTimeout(() => {
-    splashScreen.style.display = 'none';
-  }, 2800);  
-}
 
 // this function is for sidenav on small screen devices
 menuBtn.onclick = () => {

@@ -125,7 +125,7 @@
                                     placeholder="Enter the subject" required>
                             </div>
                             <div class="displayFlex flexColumn">
-                                <label class="label text-transform-capitalize" for="">Full name:</label>
+                                <label class="label text-transform-capitalize" for="">Message:</label>
                                 <textarea class="input-field text-transform-capitalize" name="" id="message-textarea"
                                     cols="30" rows="6" maxlength="500" placeholder="Type your message here"
                                     required></textarea>
@@ -177,7 +177,7 @@
             charCounter = 0, // character counter
             charLimit = 500; // character limit 
 
-        counterSpan.innerHTML = `${charCounter}/500`;
+        counterSpan.innerHTML = `${charCounter}/${charLimit}`;
 
         messageTextarea.onkeyup = () => {
             counterSpan.innerHTML = `${messageTextarea.value.length}/500`;
@@ -186,7 +186,7 @@
         var googleRecaptcha = document.getElementById('google-recaptcha')
 
         googleRecaptcha.onclick = () => {
-            gR.play();
+            googleRecaptcha.play();
         }
     </script>
 

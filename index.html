@@ -168,6 +168,17 @@
     <!-- Linked Javascript -->
     <script src="assets/js/main.js"></script>
 
+    <script>
+        var splashScreen = document.getElementById('splash-screen');
+
+        // preloader / splash screen
+        window.onload = () => {
+            setTimeout(() => {
+                splashScreen.style.display = 'none';
+            }, 2800);
+        }
+    </script>
+
 </body>
 
 </html>
